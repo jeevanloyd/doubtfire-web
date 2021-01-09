@@ -280,6 +280,7 @@ import { EmojiService } from './common/services/emoji.service';
 import { TaskListItemComponent } from './projects/states/dashboard/directives/student-task-list/task-list-item/task-list-item.component';
 import { CreatePortfolioTaskListItemComponent } from './projects/states/dashboard/directives/student-task-list/create-portfolio-task-list-item/create-portfolio-task-list-item.component';
 import { TaskDescriptionCardComponent } from './projects/states/dashboard/directives/task-dashboard/directives/task-description-card/task-description-card.component'
+import { TaskDueCard1Component } from './projects/states/dashboard/directives/task-dashboard/directives/task-due-card/task-due-card1.component';
 import { TaskCommentsViewerComponent } from './tasks/task-comments-viewer/task-comments-viewer.component';
 import { UserIconComponent } from './common/user-icon/user-icon.component';
 import { PdfViewerComponent } from './common/pdf-viewer/pdf-viewer.component';
@@ -356,6 +357,8 @@ DoubtfireAngularJSModule.directive('createPortfolioTaskListItem',
   downgradeComponent({ component: CreatePortfolioTaskListItemComponent }));
 DoubtfireAngularJSModule.directive('taskDescriptionCard',
   downgradeComponent({ component: TaskDescriptionCardComponent}));
+DoubtfireAngularJSModule.directive('taskDueCard1',
+  downgradeComponent({ component: TaskDueCard1Component}));
 
   // Global configuration
 DoubtfireAngularJSModule.directive('taskCommentsViewer',
